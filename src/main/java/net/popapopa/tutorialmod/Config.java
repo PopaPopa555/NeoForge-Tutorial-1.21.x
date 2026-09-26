@@ -1,4 +1,4 @@
-package net.PopaPopa555.tutorialmod;
+package net.popapopa.tutorialmod;
 
 import java.util.List;
 
