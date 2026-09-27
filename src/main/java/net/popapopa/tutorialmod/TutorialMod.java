@@ -2,6 +2,7 @@ package net.popapopa.tutorialmod;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.popapopa.tutorialmod.block.ModBlock;
 import net.popapopa.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -33,6 +34,7 @@ public class TutorialMod {
         modEventBus.addListener(this::commonSetup);
 
         ModItems.register(modEventBus);
+        ModBlock.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
@@ -55,6 +57,10 @@ public class TutorialMod {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.BISMUTH);
             event.accept(ModItems.RAW_BISMUTH);
+        }
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlock.BISMUTH_BLOCK);
+            event.accept(ModBlock.BISMUTH_ORE);
         }
     }
 
