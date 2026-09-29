@@ -3,6 +3,7 @@ package net.popapopa.tutorialmod;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.popapopa.tutorialmod.block.ModBlock;
+import net.popapopa.tutorialmod.item.ModCreativeModTabs;
 import net.popapopa.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -32,6 +33,8 @@ public class TutorialMod {
     public TutorialMod(IEventBus modEventBus, ModContainer modContainer) {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
+
+        ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlock.register(modEventBus);
