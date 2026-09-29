@@ -29,6 +29,12 @@ public class ModBlock {
                     BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()
                             .sound(SoundType.STONE)));
 
+    public static final DeferredBlock<Block> BISMUTH_DEEPSLATE_ORE = registerBlock("bismuth_deepslate_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3, 6),
+                    BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()
+                            .sound(SoundType.DEEPSLATE)));
+
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

@@ -34,7 +34,7 @@ public class TutorialMod {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-        ModCreativeModTabs.register(modEventBus);
+        ModCreativeModTabs.register(modEventBus );
 
         ModItems.register(modEventBus);
         ModBlock.register(modEventBus);
@@ -57,14 +57,14 @@ public class TutorialMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.BISMUTH);
-            event.accept(ModItems.RAW_BISMUTH);
-        }
-        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
-            event.accept(ModBlock.BISMUTH_BLOCK);
-            event.accept(ModBlock.BISMUTH_ORE);
-        }
+//        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+//            event.accept(ModItems.BISMUTH);
+//            event.accept(ModItems.RAW_BISMUTH);
+//        }
+//        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+//            event.accept(ModBlock.BISMUTH_BLOCK);
+//            event.accept(ModBlock.BISMUTH_ORE);
+//        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
