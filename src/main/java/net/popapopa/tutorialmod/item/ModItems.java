@@ -5,6 +5,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.popapopa.tutorialmod.TutorialMod;
+import net.popapopa.tutorialmod.item.custom.ChiselItem;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(TutorialMod.MODID);
@@ -14,6 +15,9 @@ public class ModItems {
 
     public  static final DeferredItem<Item> RAW_BISMUTH = ITEMS.register("raw_bismuth",
             () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> CHISEL = ITEMS.register("chisel",
+            () -> new ChiselItem(new Item.Properties().durability(32)));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

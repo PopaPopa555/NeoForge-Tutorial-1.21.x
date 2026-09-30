@@ -1,6 +1,7 @@
 {
   "item.tutorialmod.bismuth": "Висмут",
   "item.tutorialmod.raw_bismuth": "Рудной Висмут",
+  "item.tutorialmod.chisel": "Стамеска",
 
   "block.tutorialmod.bismuth_block": "Блок Висмута",
   "block.tutorialmod.bismuth_ore": "Висмутовая Руда",
