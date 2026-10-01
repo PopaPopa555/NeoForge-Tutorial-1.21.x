@@ -12,6 +12,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.popapopa.tutorialmod.TutorialMod;
+import net.popapopa.tutorialmod.block.custom.MagicBlock;
 import net.popapopa.tutorialmod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -34,6 +35,9 @@ public class ModBlock {
                     BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()
                             .sound(SoundType.DEEPSLATE)));
 
+    public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
+            ()-> new MagicBlock(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
