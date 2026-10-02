@@ -3,6 +3,11 @@
   "item.tutorialmod.raw_bismuth": "Рудной Висмут",
   "item.tutorialmod.chisel": "Стамеска",
 
+  "item.tutorialmod.radish": "Редиис",
+
+  "item.tutorialmod.frostfire_ice": "Морозное Пламя",
+  "item.tutorialmod.starlight_ashes": "Звёздная Пыль",
+
   "block.tutorialmod.bismuth_block": "Блок Висмута",
   "block.tutorialmod.bismuth_ore": "Висмутовая Руда",
   "block.tutorialmod.bismuth_deepslate_ore": "Глубинносланцевая Висмутовая Руда",
