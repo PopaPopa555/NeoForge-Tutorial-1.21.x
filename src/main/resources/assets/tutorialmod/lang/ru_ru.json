@@ -11,9 +11,13 @@
   "block.tutorialmod.bismuth_block": "Блок Висмута",
   "block.tutorialmod.bismuth_ore": "Висмутовая Руда",
   "block.tutorialmod.bismuth_deepslate_ore": "Глубинносланцевая Висмутовая Руда",
-  "block.tutorialmod.magic_block": "Магическкий Блок",
+  "block.tutorialmod.magic_block": "Магический Блок",
 
   "creativetab.tutorialmod.bismuth_items": "Предметы Висмута",
-  "creativetab.tutorialmod.bismuth_blocks": "Блоки Висмута"
+  "creativetab.tutorialmod.bismuth_blocks": "Блоки Висмута",
 
+  "tooltip.tutorialmod.magic_block.tooltip": "Этот Блок очень §9МАГИЧЕСКИЙ§r",
+  "tooltip.tutorialmod.chisel.shift_down": "Этот предмет позволяет превращать блоки в кирпичи",
+  "tooltip.tutorialmod.chisel": "Нажми §eShift§r для большей информации",
+  "tooltip.tutorialmod.radish.tooltip": "Это действительно вкусно!"
 }
