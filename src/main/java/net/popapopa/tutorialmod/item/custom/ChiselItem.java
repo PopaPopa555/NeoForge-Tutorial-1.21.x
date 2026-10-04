@@ -14,7 +14,7 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.popapopa.tutorialmod.block.ModBlock;
+import net.popapopa.tutorialmod.block.ModBlocks;
 
 import java.util.List;
 import java.util.Map;
@@ -27,7 +27,7 @@ public class ChiselItem extends Item {
                     Blocks.DEEPSLATE, Blocks.DEEPSLATE_BRICKS,
                     Blocks.GOLD_BLOCK, Blocks.IRON_BLOCK,
                     Blocks.IRON_BLOCK, Blocks.STONE,
-                    Blocks.NETHERRACK, ModBlock.BISMUTH_BLOCK.get()
+                    Blocks.NETHERRACK, ModBlocks.BISMUTH_BLOCK.get()
             );
 
     public ChiselItem(Properties properties){

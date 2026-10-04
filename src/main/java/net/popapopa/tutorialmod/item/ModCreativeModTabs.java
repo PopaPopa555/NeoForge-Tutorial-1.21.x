@@ -1,6 +1,5 @@
 package net.popapopa.tutorialmod.item;
 
-import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -9,7 +8,7 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.popapopa.tutorialmod.TutorialMod;
-import net.popapopa.tutorialmod.block.ModBlock;
+import net.popapopa.tutorialmod.block.ModBlocks;
 
 import java.util.function.Supplier;
 
@@ -30,14 +29,14 @@ public class ModCreativeModTabs {
                     })
                     .build());
     public static final Supplier<CreativeModeTab> BISMUTH_BLOCK_TAB = CREATIVE_MOD_TAB.register("bismuth_blocks_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlock.BISMUTH_BLOCK))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.BISMUTH_BLOCK))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(TutorialMod.MODID, "bismuth_items_tab"))
                     .title(Component.translatable("creativetab.tutorialmod.bismuth_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModBlock.BISMUTH_BLOCK);
-                        output.accept(ModBlock.BISMUTH_ORE);
-                        output.accept(ModBlock.BISMUTH_DEEPSLATE_ORE);
-                        output.accept(ModBlock.MAGIC_BLOCK);
+                        output.accept(ModBlocks.BISMUTH_BLOCK);
+                        output.accept(ModBlocks.BISMUTH_ORE);
+                        output.accept(ModBlocks.BISMUTH_DEEPSLATE_ORE);
+                        output.accept(ModBlocks.MAGIC_BLOCK);
                     })
                     .build());
 

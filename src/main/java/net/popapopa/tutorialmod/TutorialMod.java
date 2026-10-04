@@ -1,8 +1,6 @@
 package net.popapopa.tutorialmod;
 
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
-import net.popapopa.tutorialmod.block.ModBlock;
+import net.popapopa.tutorialmod.block.ModBlocks;
 import net.popapopa.tutorialmod.item.ModCreativeModTabs;
 import net.popapopa.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
@@ -37,7 +35,7 @@ public class TutorialMod {
         ModCreativeModTabs.register(modEventBus );
 
         ModItems.register(modEventBus);
-        ModBlock.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
