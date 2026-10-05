@@ -13,6 +13,19 @@
   "block.tutorialmod.bismuth_deepslate_ore": "Глубинносланцевая Висмутовая Руда",
   "block.tutorialmod.magic_block": "Магический Блок",
 
+  "block.tutorialmod.bismuth_stairs": "Вистмутовые ступени",
+  "block.tutorialmod.bismuth_slab": "Висмутовый плита",
+
+  "block.tutorialmod.bismuth_button": "Висмутовая кнопка",
+  "block.tutorialmod.bismuth_pressure_plate": "Висмутовая нажимная плита",
+
+  "block.tutorialmod.bismuth_fence": "Висмутовый забор",
+  "block.tutorialmod.bismuth_fence_gate": "Висмутовая калитка",
+  "block.tutorialmod.bismuth_wall": "Висмутовая ограда",
+
+  "block.tutorialmod.bismuth_door": "Висмутовая дверь",
+  "block.tutorialmod.bismuth_trapdoor": "Висмутовый люк",
+
   "creativetab.tutorialmod.bismuth_items": "Предметы Висмута",
   "creativetab.tutorialmod.bismuth_blocks": "Блоки Висмута",
 
