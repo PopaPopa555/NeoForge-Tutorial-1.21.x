@@ -15,6 +15,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.popapopa.tutorialmod.block.ModBlocks;
+import net.popapopa.tutorialmod.component.ModDataComponent;
 
 import java.util.List;
 import java.util.Map;
@@ -48,6 +49,8 @@ public class ChiselItem extends Item {
                             item -> context.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
 
                     level.playSound(null, context.getClickedPos(), SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS);
+
+                    context.getItemInHand().set(ModDataComponent.COORDINATES, context.getClickedPos());
             }
         }
 
@@ -55,12 +58,18 @@ public class ChiselItem extends Item {
     }
 
     @Override
-    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents,
+                                TooltipFlag tooltipFlag) {
         if(Screen.hasShiftDown()){
             tooltipComponents.add(Component.translatable("tooltip.tutorialmod.chisel.shift_down"));
         }
         else{
             tooltipComponents.add(Component.translatable("tooltip.tutorialmod.chisel"));
+        }
+
+        if(stack.get(ModDataComponent.COORDINATES) != null) {
+            tooltipComponents.add(Component.translatable("tooltip.tutorialmod.chisel_info_pos",
+                    stack.get(ModDataComponent.COORDINATES).toString()));
         }
 
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);

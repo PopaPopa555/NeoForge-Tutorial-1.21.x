@@ -1,6 +1,7 @@
 package net.popapopa.tutorialmod;
 
 import net.popapopa.tutorialmod.block.ModBlocks;
+import net.popapopa.tutorialmod.component.ModDataComponent;
 import net.popapopa.tutorialmod.item.ModCreativeModTabs;
 import net.popapopa.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
@@ -37,6 +38,7 @@ public class TutorialMod {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+        ModDataComponent.register(modEventBus);
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
@@ -55,14 +57,7 @@ public class TutorialMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-//        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-//            event.accept(ModItems.BISMUTH);
-//            event.accept(ModItems.RAW_BISMUTH);
-//        }
-//        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
-//            event.accept(ModBlock.BISMUTH_BLOCK);
-//            event.accept(ModBlock.BISMUTH_ORE);
-//        }
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

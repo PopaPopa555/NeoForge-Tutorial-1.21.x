@@ -8,6 +8,12 @@
   "item.tutorialmod.frostfire_ice": "Морозное Пламя",
   "item.tutorialmod.starlight_ashes": "Звёздная Пыль",
 
+  "item.tutorialmod.bismuth_sword": "Висмутовый меч",
+  "item.tutorialmod.bismuth_pickaxe": "Висмотовая кирка",
+  "item.tutorialmod.bismuth_axe": "Висмутовый топор",
+  "item.tutorialmod.bismuth_shovel": "Висмутовая лопата",
+  "item.tutorialmod.bismuth_hoe": "Висмутовая матыга",
+
   "block.tutorialmod.bismuth_block": "Блок Висмута",
   "block.tutorialmod.bismuth_ore": "Висмутовая Руда",
   "block.tutorialmod.bismuth_deepslate_ore": "Глубинносланцевая Висмутовая Руда",
@@ -34,5 +40,6 @@
   "tooltip.tutorialmod.magic_block.tooltip": "Этот Блок очень §9МАГИЧЕСКИЙ§r",
   "tooltip.tutorialmod.chisel.shift_down": "Этот предмет позволяет превращать блоки в кирпичи",
   "tooltip.tutorialmod.chisel": "Нажми §eShift§r для большей информации",
-  "tooltip.tutorialmod.radish.tooltip": "Это действительно вкусно!"
+  "tooltip.tutorialmod.radish.tooltip": "Это действительно вкусно!",
+  "tooltip.tutorialmod.chisel_info_pos": "Последний блок изменён в %s"
 }

@@ -8,6 +8,11 @@
   "item.tutorialmod.frostfire_ice": "Frostfire Ice",
   "item.tutorialmod.starlight_ashes": "Starlight Ashes",
 
+  "item.tutorialmod.bismuth_sword": "Bismuth Sword",
+  "item.tutorialmod.bismuth_pickaxe": "Bismuth Pickaxe",
+  "item.tutorialmod.bismuth_axe": "Bismuth Axe",
+  "item.tutorialmod.bismuth_shovel": "Bismuth Shovel",
+  "item.tutorialmod.bismuth_hoe": "Bismuth Hoe",
 
   "block.tutorialmod.bismuth_block": "Bismuth of Block",
   "block.tutorialmod.bismuth_ore": "Bismuth Ore",
@@ -35,5 +40,6 @@
   "tooltip.tutorialmod.magic_block.tooltip": "This Block is very §9MAGICAL§r",
   "tooltip.tutorialmod.chisel.shift_down": "This item can chisel Blocks into Bricks",
   "tooltip.tutorialmod.chisel": "Press §eShift§r for more Information",
-  "tooltip.tutorialmod.radish.tooltip": "Tastes really great!"
+  "tooltip.tutorialmod.radish.tooltip": "Tastes really great!",
+  "tooltip.tutorialmod.chisel_info_pos": "Last Block changed at %s"
 }

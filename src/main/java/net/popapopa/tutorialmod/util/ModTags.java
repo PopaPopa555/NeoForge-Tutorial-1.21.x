@@ -10,6 +10,9 @@ import net.popapopa.tutorialmod.TutorialMod;
 
 public class ModTags {
     public static class Blocks{
+        public static final TagKey<Block> NEEDS_BISMUTH_TOOL = createTag("needs_bismuth_tool");
+        public static final TagKey<Block> INCORRECT_FOR_BISMUTH_TOOL = createTag("incorrect_for_bismuth_tool");
+
         private static TagKey<Block> createTag(String name){
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(TutorialMod.MODID, name));
         }
