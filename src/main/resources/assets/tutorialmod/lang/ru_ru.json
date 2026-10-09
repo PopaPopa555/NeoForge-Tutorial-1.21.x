@@ -16,6 +16,11 @@
 
   "item.tutorialmod.bismuth_hammer": "Висмутовый молот",
 
+  "item.tutorialmod.bismuth_helmet": "Висмутовый шлем",
+  "item.tutorialmod.bismuth_chestplate": "Висмутовый нагрудник",
+  "item.tutorialmod.bismuth_leggings": "Висмутовые поножи",
+  "item.tutorialmod.bismuth_boots": "Висмутовыу ботинки",
+
   "block.tutorialmod.bismuth_block": "Блок Висмута",
   "block.tutorialmod.bismuth_ore": "Висмутовая Руда",
   "block.tutorialmod.bismuth_deepslate_ore": "Глубинносланцевая Висмутовая Руда",
