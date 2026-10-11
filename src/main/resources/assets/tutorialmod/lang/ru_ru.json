@@ -22,6 +22,7 @@
   "item.tutorialmod.bismuth_boots": "Висмутовыу ботинки",
 
   "item.tutorialmod.bismuth_horse_armor": "Висмутовая лошадиная броня",
+  "item.tutorialmod.kaupen_armor_trim_smithing_template": "Оттделка для брони «Каупен»",
 
   "block.tutorialmod.bismuth_block": "Блок Висмута",
   "block.tutorialmod.bismuth_ore": "Висмутовая Руда",
@@ -50,5 +51,8 @@
   "tooltip.tutorialmod.chisel.shift_down": "Этот предмет позволяет превращать блоки в кирпичи",
   "tooltip.tutorialmod.chisel": "Нажми §eShift§r для большей информации",
   "tooltip.tutorialmod.radish.tooltip": "Это действительно вкусно!",
-  "tooltip.tutorialmod.chisel_info_pos": "Последний блок изменён в %s"
+  "tooltip.tutorialmod.chisel_info_pos": "Последний блок изменён в %s",
+
+  "trim_pattern.tutorialmod.kaupen": "Отделка доспеха «Каупен»",
+  "trim_material.tutorialmod.bismuth": "Материал висмут"
 }

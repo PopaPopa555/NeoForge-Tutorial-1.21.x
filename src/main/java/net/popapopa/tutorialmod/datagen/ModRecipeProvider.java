@@ -1,5 +1,6 @@
 package net.popapopa.tutorialmod.datagen;
 
+import net.minecraft.resources.ResourceLocation;
 import net.popapopa.tutorialmod.TutorialMod;
 import net.popapopa.tutorialmod.block.ModBlocks;
 import net.popapopa.tutorialmod.item.ModItems;
@@ -62,6 +63,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_bismuth", has(ModItems.BISMUTH.get())).save(recipeOutput);
         trapdoorBuilder(ModBlocks.BISMUTH_TRAPDOOR.get(), Ingredient.of(ModItems.BISMUTH.get())).group("bismuth")
                 .unlockedBy("has_bismuth", has(ModItems.BISMUTH.get())).save(recipeOutput);
+
+        trimSmithing(recipeOutput, ModItems.KAUPEN_SMITHING_TEMPLATE.get(),
+                ResourceLocation.fromNamespaceAndPath(TutorialMod.MODID, "kaupen"));
     }
 
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients,
