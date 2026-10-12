@@ -4,6 +4,7 @@ import net.popapopa.tutorialmod.block.ModBlocks;
 import net.popapopa.tutorialmod.component.ModDataComponent;
 import net.popapopa.tutorialmod.item.ModCreativeModTabs;
 import net.popapopa.tutorialmod.item.ModItems;
+import net.popapopa.tutorialmod.util.ModItemProperties;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -70,6 +71,7 @@ public class TutorialMod {
     static class ClientModEvents {
         @SubscribeEvent
         static void onClientSetup(FMLClientSetupEvent event) {
+            ModItemProperties.addCustomItemProperties();
         }
     }
 }

@@ -1,5 +1,6 @@
 package net.popapopa.tutorialmod.item;
 
+import net.minecraft.client.gui.screens.BackupConfirmScreen;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -44,8 +45,9 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.BISMUTH_BOOTS);
 
                         output.accept((ModItems.BISMUTH_HORSE_ARMOR));
-
                         output.accept(ModItems.KAUPEN_SMITHING_TEMPLATE);
+
+                        output.accept(ModItems.KAUPEN_BOW);
                     })
                     .build());
     public static final Supplier<CreativeModeTab> BISMUTH_BLOCK_TAB = CREATIVE_MOD_TAB.register("bismuth_blocks_tab",

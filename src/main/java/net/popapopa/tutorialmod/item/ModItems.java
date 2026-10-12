@@ -79,6 +79,9 @@ public class ModItems {
             () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(TutorialMod.MODID,
                     "kaupen")));
 
+    public static final DeferredItem<Item> KAUPEN_BOW = ITEMS.register("kaupen_bow",
+            () -> new BowItem(new Item.Properties().durability(500)));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
