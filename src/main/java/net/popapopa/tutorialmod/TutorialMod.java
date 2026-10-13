@@ -2,8 +2,10 @@ package net.popapopa.tutorialmod;
 
 import net.popapopa.tutorialmod.block.ModBlocks;
 import net.popapopa.tutorialmod.component.ModDataComponent;
+import net.popapopa.tutorialmod.effect.ModEffect;
 import net.popapopa.tutorialmod.item.ModCreativeModTabs;
 import net.popapopa.tutorialmod.item.ModItems;
+import net.popapopa.tutorialmod.potion.ModPotions;
 import net.popapopa.tutorialmod.util.ModItemProperties;
 import org.slf4j.Logger;
 
@@ -40,6 +42,9 @@ public class TutorialMod {
         ModBlocks.register(modEventBus);
 
         ModDataComponent.register(modEventBus);
+
+        ModEffect.register(modEventBus);
+        ModPotions.register(modEventBus);
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
