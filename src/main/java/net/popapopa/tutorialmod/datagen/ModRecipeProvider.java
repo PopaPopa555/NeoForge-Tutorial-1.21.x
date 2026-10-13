@@ -39,7 +39,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         .define('#', Items.STICK)
                         .define('X', Items.STRING)
                         .define('B', ModItems.BISMUTH.get())
-                        .unlockedBy("has_kaupen_bow", has(ModItems.BISMUTH.get())).save(recipeOutput);
+                        .unlockedBy("has_kaupen_bow", has(ModItems.BISMUTH.get()
+                        )).save(recipeOutput);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BISMUTH.get(), 9)
                 .requires(ModBlocks.BISMUTH_BLOCK)
