@@ -1,5 +1,7 @@
 {
   "values": [
-    "tutorialmod:bismuth_deepslate_ore"
+    "tutorialmod:bismuth_deepslate_ore",
+    "tutorialmod:bismuth_nether_ore",
+    "tutorialmod:bismuth_end_ore"
   ]
 }

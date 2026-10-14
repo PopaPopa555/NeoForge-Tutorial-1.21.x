@@ -24,7 +24,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.BISMUTH_ORE.get())
                 .add(ModBlocks.BISMUTH_LAMP.get())
                 .add(ModBlocks.BISMUTH_DEEPSLATE_ORE.get())
-                .add(ModBlocks.MAGIC_BLOCK.get());
+                .add(ModBlocks.MAGIC_BLOCK.get())
+                 .add(ModBlocks.BISMUTH_NETHER_ORE.get())
+                .add(ModBlocks.BISMUTH_END_ORE.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.BISMUTH_DEEPSLATE_ORE.get())

@@ -4,6 +4,8 @@
     "tutorialmod:bismuth_ore",
     "tutorialmod:bismuth_lamp",
     "tutorialmod:bismuth_deepslate_ore",
-    "tutorialmod:magic_block"
+    "tutorialmod:magic_block",
+    "tutorialmod:bismuth_nether_ore",
+    "tutorialmod:bismuth_end_ore"
   ]
 }
