@@ -33,6 +33,9 @@
   "block.tutorialmod.bismuth_block": "Блок Висмута",
   "block.tutorialmod.bismuth_ore": "Висмутовая Руда",
   "block.tutorialmod.bismuth_deepslate_ore": "Глубинносланцевая Висмутовая Руда",
+  "block.tutorialmod.bismuth_end_ore": "Эндовая висмутовя руда",
+  "block.tutorialmod.bismuth_nether_ore": "Незерская висмутовввая руда",
+
   "block.tutorialmod.magic_block": "Магический Блок",
 
   "block.tutorialmod.bismuth_stairs": "Вистмутовые ступени",
