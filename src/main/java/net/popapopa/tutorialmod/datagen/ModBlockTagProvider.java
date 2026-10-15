@@ -53,5 +53,11 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.BLOODWOOD_WOOD.get())
                 .add(ModBlocks.STRIPPED_BLOODWOOD_LOG.get())
                 .add(ModBlocks.STRIPPED_BLOODWOOD_WOOD.get());
+
+        this.tag(BlockTags.PLANKS)
+                .add(ModBlocks.BLOODWOOD_PLANKS.get());
+
+        this.tag(BlockTags.LEAVES)
+                .add(ModBlocks.BLOODWOOD_LEAVES.get());
     }
 }

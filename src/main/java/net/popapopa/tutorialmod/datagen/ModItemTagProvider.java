@@ -5,6 +5,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
@@ -63,5 +64,8 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
         this.tag(ItemTags.PLANKS)
                 .add(ModBlocks.BLOODWOOD_PLANKS.get().asItem());
+
+        this.tag(ItemTags.LEAVES)
+                .add(ModBlocks.BLOODWOOD_LEAVES.get().asItem()  );
     }
 }
