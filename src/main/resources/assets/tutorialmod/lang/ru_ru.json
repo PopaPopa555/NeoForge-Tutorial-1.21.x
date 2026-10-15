@@ -53,6 +53,15 @@
 
   "block.tutorialmod.bismuth_lamp": "Висмутовая ламппа",
 
+  "block.tutorialmod.bloodwood_log": "Бревно кровавого дерева",
+  "block.tutorialmod.bloodwood_planks": "Доски из кровавого дерева",
+  "block.tutorialmod.bloodwood_wood": "Кровавая древесина",
+  "block.tutorialmod.stripped_bloodwood_log": "Очищенное бревно кровавого дерева",
+  "block.tutorialmod.stripped_bloodwood_wood": "Очищенная кровавая древесина",
+  "block.tutorialmod.bloodwood_leaves": "Листва кровавого дерева",
+
+  "block.tutorialmod.bloodwood_sapling": "Саженец кровавого дерева",
+
   "creativetab.tutorialmod.bismuth_items": "Предметы Висмута",
   "creativetab.tutorialmod.bismuth_blocks": "Блоки Висмута",
 

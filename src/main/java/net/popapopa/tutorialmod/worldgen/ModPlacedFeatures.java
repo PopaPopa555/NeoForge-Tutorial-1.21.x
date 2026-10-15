@@ -3,14 +3,18 @@ package net.popapopa.tutorialmod.worldgen;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
+import net.minecraft.world.level.levelgen.feature.VegetationPatchFeature;
 import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraft.world.level.levelgen.placement.PlacementModifier;
 import net.popapopa.tutorialmod.TutorialMod;
+import net.popapopa.tutorialmod.block.ModBlocks;
 
 import java.util.List;
 
@@ -18,6 +22,8 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> BISMUTH_ORE_PLACED_KEY = registriesKey("bismuth_ore_placed");
     public static final ResourceKey<PlacedFeature> END_BISMUTH_ORE_PLACED_KEY = registriesKey("end_bismuth_ore_placed");
     public static final ResourceKey<PlacedFeature> NETHER_BISMUTH_ORE_PLACED_KEY = registriesKey("nether_bismuth_ore_placed");
+
+    public static final ResourceKey<PlacedFeature> BLOODWOOD_PLACED_KEY = registriesKey("bloodwood_placed");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context){
         var configuredFeatured = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -33,6 +39,10 @@ public class ModPlacedFeatures {
         register(context, END_BISMUTH_ORE_PLACED_KEY, configuredFeatured.getOrThrow(ModConfiguredFeatures.END_BISMUTH_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(12, HeightRangePlacement.uniform(VerticalAnchor.absolute(-64),
                         VerticalAnchor.absolute(80))));
+
+        register(context, BLOODWOOD_PLACED_KEY, configuredFeatured.getOrThrow(ModConfiguredFeatures.BLOODWOOD_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 2),
+                        ModBlocks.BLOODWOOD_SAPLING.get()));
     }
 
     public static ResourceKey<PlacedFeature> registriesKey(String name){

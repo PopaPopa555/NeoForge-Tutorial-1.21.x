@@ -14,6 +14,7 @@ import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
+import net.neoforged.fml.common.Mod;
 import net.popapopa.tutorialmod.block.ModBlocks;
 import net.popapopa.tutorialmod.item.ModItems;
 
@@ -55,6 +56,16 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createDoorTable(ModBlocks.BISMUTH_DOOR.get()));
 
         dropSelf(ModBlocks.BISMUTH_LAMP.get());
+
+        this.dropSelf(ModBlocks.BLOODWOOD_LOG.get());
+        this.dropSelf(ModBlocks.BLOODWOOD_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_BLOODWOOD_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_BLOODWOOD_WOOD.get());
+        this.dropSelf(ModBlocks.BLOODWOOD_PLANKS.get());
+        this.dropSelf(ModBlocks.BLOODWOOD_SAPLING.get());
+
+        this.add(ModBlocks.BLOODWOOD_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.BLOODWOOD_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block qBlock, Item item, float minDrops, float maxDrops){
